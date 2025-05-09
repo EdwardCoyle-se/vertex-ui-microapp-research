@@ -1,59 +1,32 @@
-# VertexUiMicroappResearch
+# Vertex UI Microapp Research Project
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
 
-## Development server
+## Documentation
 
-To start a local development server, run:
+- [Vertex UI Docs on Microapp Architecture](https://github.com/SE-Sustainability-Business/vertex-ui/blob/microapp-architecture-research/docs/research/microapp.md)
+- [NPM: Angular Architects Native Federation Package](https://www.npmjs.com/package/@angular-architects/native-federation)
 
-```bash
-ng serve
+## Project Structure
+
+```
+projects
+├── container
+├── microapp-a
+├── microapp-b
+├── microapp-c
+└── shared-library-a
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Container
 
-## Code scaffolding
+This is also called the "shell" application.  Its purpose is to be a central location for loading and orchestrating all other microapps.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Microapps (A/B/C)
 
-```bash
-ng generate component component-name
-```
+Each of these applications can be deployed/run independently of each other.  They are also able to be loaded remotely by the container app.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Shared Libraries (A)
 
-```bash
-ng generate --help
-```
+Shared libraries are included in one or more microapp, and potentially the container app.  They provide common utilities, assets, services, etc. needed for all areas of the application.  They may also contain framework dependencies.
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
