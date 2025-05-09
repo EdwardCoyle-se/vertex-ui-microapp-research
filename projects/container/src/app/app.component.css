@@ -23,3 +23,7 @@
 .container-header-nav ul li {
   padding-inline: var(--nav-gap);
 }
+
+.container-frame main {
+  flex-grow: 1;
+}
