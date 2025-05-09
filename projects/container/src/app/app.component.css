@@ -1,0 +1,25 @@
+:host {
+  display: contents;
+}
+
+.container-frame {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.container-header {
+  background-color: #f0f0f0;
+}
+
+.container-header-nav ul {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.container-header-nav ul li {
+  padding-inline: var(--nav-gap);
+}
