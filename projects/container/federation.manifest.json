@@ -1,0 +1,5 @@
+{
+  "microapp-a" : "http://localhost:4201/remoteEntry.json",
+  "microapp-b" : "http://localhost:4202/remoteEntry.json",
+  "microapp-c" : "http://localhost:4203/remoteEntry.json"
+}
